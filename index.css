@@ -1,0 +1,184 @@
+body {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Blurred Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('onepiecew1.jpg') center/cover no-repeat;
+    filter: blur(2px); /* Apply blur */
+    z-index: -1; /* Send it behind other elements */
+}
+
+/* Ensure body background is removed */
+body {
+    background: none;
+}
+
+
+html
+{
+		display: flex;
+		justify-content: center;
+}
+
+		.main
+		{
+			border:none;
+			color: white;
+            margin-top: -429px;
+			margin-right: 0px;
+			margin-left: 600px;
+			margin-bottom: 0px;
+			justify-content: center;
+			align-items: center;
+			
+			backdrop-filter: blur(1px);
+			opacity: 100%;	
+            height: 429px;
+		}
+
+.imageback
+        {
+            
+            background-image: url('onepiecew1.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-right: 0px;
+			margin-left: 0px;
+            width: 580px;
+            height: 429px;
+            margin-top: -18px;
+            
+            
+        }
+
+        .boxground
+        {
+         
+            backdrop-filter: blur(20px);
+            margin-left:-200px;
+            margin-right: 0px;
+            height:430px ;
+            width:900px ;
+            margin-top: 50px;
+            filter: none;
+            opacity: 100%;
+            filter: blur(0px);
+        }
+
+        #lg
+        {
+            animation: mymove 0s infinite ;
+        }
+        @keyframes mymove {
+            0% {transform: rotate(0deg);}
+           
+            100%{transform:rotate(5400deg);}
+          }
+
+
+		h1
+		{
+			text-align: center;
+		}
+
+		table
+		{
+			border: none;
+			width: 80%;
+			border-radius: 20px;
+
+		}
+
+
+		th,td,tr
+		{
+			border: none;
+			
+			padding : 7px;
+		}
+
+
+
+
+
+
+
+		button {
+   				padding: 0px;
+    			font-size: 0px;
+   				border-radius: 100%;
+   				background-color: #000000;
+   				border: black;
+   				opacity: 90%;
+   				
+				}
+
+
+		
+		/* Mobiw styles */
+		@media screen and (max-width: 750px){
+		
+            /* Main content adjustments for smaller screens */
+    .main {
+        width: 100%; /* Increase width for small screens */
+        height: auto; /* Adjust height to fit content */
+        margin-top: 10px;
+        margin-left: -10px;
+        margin-right: 10px;
+        padding: 1px;
+    }
+
+    /* Adjust background image size */
+    .imageback {
+        width: 0%;
+        height: 0px; /* Adjust height for smaller screens */
+    }
+
+    /* Boxground adjustments for smaller screens */
+    .boxground {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-top:50px;
+    }
+
+    /* Adjust the font size and layout for mobile screens */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Table adjustments */
+    table {
+        width: 100%; /* Make table full width on small screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    /* Button styling for mobile */
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        padding: 5px;
+    }
+			
+
+
+
+
+   				 }
+		
+	

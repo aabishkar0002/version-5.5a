@@ -1,0 +1,302 @@
+.box1
+{
+    height: 20px;
+    width: 40px
+    backgound-color:black;
+}
+.h{
+  margin-left: 10px;
+  display: none;
+  
+}
+
+
+
+  #search
+{
+  width: 55vw;
+  height: 5vh;
+
+
+}
+
+
+
+
+h1
+{
+  font-size: 95px;
+}
+
+.mainsection{
+  height: 90vh;
+  width: 90vw;
+  border:solid white;
+  margin-top: 0px;
+  margin-left: 7%;
+  margin-right: 30%;
+  position:relative;
+  border-radius: 5px;
+  
+  background-color:;
+  z-index: -1;
+  background-color:none;
+  /* overflow: scroll; */
+}
+
+
+
+
+
+body
+{
+ 
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+
+  height: 100%;
+  
+  color: white;
+  font-size: 10px;
+}
+.vertical
+{
+  width: 60px;
+  margin-left:-10px;
+  margin-top:0px;
+  transition: 600ms;
+  background-color:blueviolet;
+  height: 100%;
+  position: fixed;
+  opacity: 100%;
+
+}
+
+.c{
+    visibility: hidden;
+}
+
+.vertical:hover
+{
+  width: 300px;
+  margin-left:-10px;
+  margin-top:0px;
+  transition: 70ms;
+  opacity: 1;
+  background-color:blueviolet;
+  color: white;
+  z-index: 1;
+  
+  .h{
+    display:inline-block;
+    margin-left: 140px;
+    font-size: 14px;
+  }
+
+  li{
+    display:block;
+    color: white;
+    padding: 22px 0px;
+    margin-left: 10px;
+  }
+
+  li :hover
+  {
+ 
+   text-align: center;
+    color: white;
+   
+  }
+
+.fa:hover
+{
+  color: white;
+  background-color: black;
+  width: 290px;
+  transition:0ms ;
+  transition-delay: 0ms;
+  margin-left:0px;
+  text-align: center;
+  background-position-x:-10pt;
+}
+
+/* ------- transform*/
+.container {
+  display: inline-block;
+  background-color: blueviolet;
+  margin-left: 16px;
+}
+.navigationbar
+{
+  margin-left: 10px;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color:white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+ .bar1 {
+  transform: translate(0px, 11px) rotate(-75deg);
+}
+
+ .bar2 {opacity: 100; margin-left:3px;margin-top:10px;}
+
+ .bar3 {
+  transform: translate(8px, -11px) rotate(75deg);
+}                 
+/* ----------------- */
+
+.c
+{
+ visibility: visible;
+}
+}
+
+.c
+{
+ visibility: hidden;
+}
+
+
+li{
+
+  color:white;
+  padding: 22px 0px;
+  margin-left: 10px;
+  position: ;
+  
+
+}
+
+.l
+{
+  margin-top: -10px;
+}
+
+
+/* ------- transform*/
+.container {
+  display: inline-block;
+  background-color:blueviolet;
+  margin-left: 16px;
+}
+.navigationbar
+{
+  margin-left: 10px;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color:white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0px, 11px) rotate(-75deg);
+}
+
+.change .bar2 {opacity: 100; margin-left:3px;margin-top:10px;}
+
+.change .bar3 {
+  transform: translate(8px, -11px) rotate(75deg);
+}                 
+/* ----------------- */
+
+@media screen and (max-width:750px) {
+
+
+.fa
+{
+  font-size: 8px;
+}
+
+.vertical
+{
+  width: 60px;
+  margin-left:-10px;
+  margin-top:-25px;
+  transition: 600ms;
+  background-color:blueviolet;
+  height: 100%;
+  position: fixed;
+  opacity: 100%;
+  overflow-x: hidden;
+
+}
+
+
+.c{
+    visibility: hidden;
+}
+
+.vertical:hover
+{
+  width: 200px;
+  margin-left:-10px;
+  margin-top:-25px;
+  transition: 70ms;
+  opacity: 1;
+  background-color:blueviolet;
+  color: white;
+  z-index: 1;
+  overflow-x: hidden;
+
+  
+  .h{
+    margin-left: 110px;
+    font-size: 12px;
+  }
+
+  .fa
+  {
+    padding: 2px 0px;
+    margin-top:-10px;
+  }
+
+.fa:hover
+  {
+    padding: 0px 0px;
+    width: 190.2px;
+  };
+}
+
+  .mainsection{
+    height: 95vh;
+
+   
+    border:solid white;
+    margin-top: 25px;
+    margin-left: 12%;
+    margin-right: 30%;
+    position:relative;
+    border-radius: 5px;
+    text-align:left;
+    background-color:none;
+    z-index: -1;
+    background-color:none;
+    /* overflow: scroll; */
+  }
+
+
+  h1
+  {
+    font-size: 40px;
+    font-family:cursive;
+    margin-left: 3px;
+   
+  }
+  
+ 
+  
+}

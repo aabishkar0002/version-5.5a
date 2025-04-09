@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <link rel="stylesheet" href="second.css">
+ 
+</head>
+<body>
+  
+<div class="vertical">
+ <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <p class="h">....𝒽𝒶𝓉𝓈𝓊𝓂𝑒𝒾</p>
+ 
+
+  <div class="navigationbar">
+    <a href="second.html" style="text-decoration: none;"><li class="fa fa-home" style="font-size: 20px;"> <p class="c">Home</p></li></a>
+    <br>
+   <a href="Filetruck.html" style="text-decoration: none;"><li class="fa fa-truck" style="font-size: 20px;"> <p class="c">FileTruck</p></li></a>
+    <br>
+    <li class="fa fa-music" style="font-size: 20px;"> <p class="c">Listen Music</p></li>
+    <br>
+    <li class="fa fa-file" style="font-size: 20px;"> <p class="c">Blogs</p></li>
+  </div>
+
+</div>
+<!-- Active section middle -->
+<div class="mainsection">
+  <br>
+  <h1><b>3rd SEMESTER CSIT BATCH >2080</b></h1>
+  <h2><b>Exam Countdown  <div class="counter" id="countdown"></div></b> </h2>
+  <script>
+    const targetDate = new Date('2025-04-29T00:00:00');
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeLeft = targetDate - now;
+
+      if (timeLeft <= 0) {
+        document.getElementById('countdown').textContent = "🎉 It's time!";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+      const seconds = Math.floor((timeLeft / 1000) % 60);
+
+      document.getElementById('countdown').textContent =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+  </script>
+  
+       
+</div>
+
+<!-- top right date and time widget -->
+ <div class="rightsection">
+<img src="fancy1.png" style="height: 198px;width: 217px;border-radius: 2px;">  
+</div>
+
+<!-- bottom right space for something else -->
+<div class="bottomsection">
+  <p id="demo"></p>
+
+<script>
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</div>
+
+
+
+</body>
+</html>
